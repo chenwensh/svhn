@@ -164,7 +164,7 @@ def main(unused_argv):
 	# Create the model
 	y_conv, keep_prob = model(tf_train_dataset, 0.9735, shape)
 	
-	# Define the loss
+	# Define the losso
 	with tf.name_scope('loss'):
 		cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels = tf_train_labels,
 																logits = y_conv)
